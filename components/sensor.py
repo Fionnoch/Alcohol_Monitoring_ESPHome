@@ -11,7 +11,7 @@ from esphome.const import (
     STATE_CLASS_MEASUREMENT,
 )
 
-hx711_ns = cg.esphome_ns.namespace("hx711")
+hx711_ns = cg.esphome_ns.namespace("hx711_median")
 HX711Sensor = hx711_ns.class_("HX711Sensor", sensor.Sensor, cg.PollingComponent)
 
 CONF_DOUT_PIN = "dout_pin"
